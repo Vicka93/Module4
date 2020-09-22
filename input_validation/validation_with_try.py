@@ -8,9 +8,10 @@ Taking the three scores and finding the average, storing into a variable.
 AMT_OF_SCORES = 3
 
 
-def average(score1,score2,score3):
+def average(score1, score2, score3):
     # method average prompting for grades and calculating average score
-
+    if score1 < 0 or score2 < 0 or score3 < 0:
+        raise ValueError()
     return float((score1 + score2 + score3) / AMT_OF_SCORES)
 
 
